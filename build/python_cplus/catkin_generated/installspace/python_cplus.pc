@@ -1,8 +1,0 @@
-prefix=/home/hdy/catkin_ws/install
-
-Name: python_cplus
-Description: Description of python_cplus
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/hdy/catkin_ws/install/lib 
-Requires: 

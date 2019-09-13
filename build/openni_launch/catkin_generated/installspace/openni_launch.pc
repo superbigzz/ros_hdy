@@ -1,8 +1,0 @@
-prefix=/home/hdy/catkin_ws/install
-
-Name: openni_launch
-Description: Description of openni_launch
-Version: 1.9.8
-Cflags: 
-Libs: -L/home/hdy/catkin_ws/install/lib 
-Requires: 

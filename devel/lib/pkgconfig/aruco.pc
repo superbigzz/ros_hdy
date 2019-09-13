@@ -1,8 +1,0 @@
-prefix=/home/hdy/catkin_ws/devel
-
-Name: aruco
-Description: Description of aruco
-Version: 0.2.4
-Cflags: -I/home/hdy/catkin_ws/src/aruco_ros/aruco/include
-Libs: -L/home/hdy/catkin_ws/devel/lib -laruco
-Requires: 

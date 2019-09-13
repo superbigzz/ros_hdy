@@ -1,8 +1,0 @@
-prefix=/home/hdy/catkin_ws/devel
-
-Name: wpb_home_tutorials
-Description: Description of wpb_home_tutorials
-Version: 0.1.0
-Cflags: -I/home/hdy/catkin_ws/devel/include
-Libs: -L/home/hdy/catkin_ws/devel/lib 
-Requires: message_runtime

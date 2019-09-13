@@ -1,8 +1,0 @@
-prefix=/home/hdy/catkin_ws/install
-
-Name: kinect2_viewer
-Description: Description of kinect2_viewer
-Version: 0.0.1
-Cflags: 
-Libs: -L/home/hdy/catkin_ws/install/lib 
-Requires: 

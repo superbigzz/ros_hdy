@@ -1,8 +1,0 @@
-prefix=/home/hdy/catkin_ws/devel
-
-Name: aruco_ros
-Description: Description of aruco_ros
-Version: 0.2.4
-Cflags: -I/home/hdy/catkin_ws/devel/include -I/home/hdy/catkin_ws/src/aruco_ros/aruco_ros/include
-Libs: -L/home/hdy/catkin_ws/devel/lib -laruco_ros_utils
-Requires: aruco sensor_msgs tf

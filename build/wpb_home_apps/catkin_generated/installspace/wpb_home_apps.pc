@@ -1,8 +1,0 @@
-prefix=/home/hdy/catkin_ws/install
-
-Name: wpb_home_apps
-Description: Description of wpb_home_apps
-Version: 0.0.0
-Cflags: -I/home/hdy/catkin_ws/install/include
-Libs: -L/home/hdy/catkin_ws/install/lib 
-Requires: message_runtime

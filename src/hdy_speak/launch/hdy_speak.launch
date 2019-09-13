@@ -1,5 +1,0 @@
-<launch>
-    <node pkg = "sound_play" name = "soundplay_node" type = "soundplay_node.py" />
-    <node pkg = "hdy_speak" type = "hdy_speak" name = "hdy_speak" output="screen"/>
-    <!--node name="sound_test" pkg="sound_play" type="test.py"/-->
-</launch>

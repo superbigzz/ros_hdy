@@ -1,2 +1,0 @@
-set(DEPTH_REG_CPU "ON")
-set(DEPTH_REG_OPENCL "ON")
