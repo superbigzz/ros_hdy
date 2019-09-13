@@ -1,0 +1,8 @@
+prefix=/home/hdy/catkin_ws/install
+
+Name: audio_play
+Description: Description of audio_play
+Version: 0.3.3
+Cflags: 
+Libs: -L/home/hdy/catkin_ws/install/lib 
+Requires: 

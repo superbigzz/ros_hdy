@@ -1,0 +1,19 @@
+<launch>
+
+  <node name="recognizer" pkg="pocketsphinx" type="recognizer.py">
+    <param name="lm" value="$(find wpb_home_tutorials)/sr/hdy/hdy.lm"/>
+    <param name="dict" value="$(find wpb_home_tutorials)/sr/hdy/hdy.dic"/>
+    <param name="hmm" value="$(find wpb_home_tutorials)/sr/zh_cn.cd_cont_5000"/>
+    <!--param name="hmm" value="$(find wpb_home_tutorials)/src/pocketsphinx/model/hmm/zh/tdt_sc_8k"/-->
+  </node>
+
+  <!-- Run wpb_home_voice_cmd -->
+  <node pkg="wpb_home_tutorials" type="wpb_home_voice_cmd" name="wpb_home_voice_cmd" output="screen"/>
+  
+  <!-- Run wpb_home core -->
+  <node pkg="wpb_home_bringup" type="wpb_home_core" name="wpb_home_core" output="screen">
+    <param name="serial_port" type="string" value="/dev/ftdi"/> 
+    <rosparam file="$(find wpb_home_bringup)/config/wpb_home.yaml" command="load" />
+  </node>
+
+</launch>

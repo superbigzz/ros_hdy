@@ -1,0 +1,24 @@
+\subsubsection usage Usage
+\verbatim
+<node name="tracker_mbt_client" pkg="visp_tracker" type="tracker_mbt_client">
+  <param name="angle_appear" type="double" value="65.0" />
+  <param name="angle_disappear" type="double" value="75.0" />
+  <param name="mask_size" type="int" value="7" />
+  <param name="range" type="int" value="5" />
+  <param name="threshold" type="double" value="2000.0" />
+  <param name="mu1" type="double" value="0.5" />
+  <param name="mu2" type="double" value="0.5" />
+  <param name="sample_step" type="double" value="3.0" />
+  <param name="strip" type="int" value="2" />
+  <param name="first_threshold" type="double" value="0.4" />
+  <param name="mask_border" type="int" value="5" />
+  <param name="max_features" type="int" value="10000" />
+  <param name="window_size" type="int" value="5" />
+  <param name="quality" type="double" value="0.05" />
+  <param name="min_distance" type="double" value="5.0" />
+  <param name="harris" type="double" value="0.01" />
+  <param name="size_block" type="int" value="3" />
+  <param name="pyramid_lvl" type="int" value="3" />
+</node>
+\endverbatim
+

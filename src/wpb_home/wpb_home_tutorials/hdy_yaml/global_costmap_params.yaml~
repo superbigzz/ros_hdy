@@ -1,0 +1,12 @@
+global_costmap:
+  global_frame: /map
+  robot_base_frame: /base_footprint
+  update_frequency: 1.0
+  static_map: true
+  transform_tolerance: 1.0
+  map_type: costmap
+  plugins: 
+      - {name: static_map,       type: "costmap_2d::StaticLayer"}
+      - {name: obstacles,        type: "costmap_2d::VoxelLayer"}     
+      - {name: simplelayer,        type: "simple_layer_namespace::SimpleLayer"}  
+      - {name: inflation_layer,        type: "costmap_2d::InflationLayer"}

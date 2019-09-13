@@ -1,0 +1,8 @@
+prefix=/home/hdy/catkin_ws/devel
+
+Name: wpb_home_remote
+Description: Description of wpb_home_remote
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hdy/catkin_ws/devel/lib 
+Requires: 

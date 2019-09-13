@@ -1,0 +1,19 @@
+(cl:defpackage visp_tracker-msg
+  (:use )
+  (:export
+   "<KLTPOINT>"
+   "KLTPOINT"
+   "<KLTPOINTS>"
+   "KLTPOINTS"
+   "<KLTSETTINGS>"
+   "KLTSETTINGS"
+   "<MOVINGEDGESETTINGS>"
+   "MOVINGEDGESETTINGS"
+   "<MOVINGEDGESITE>"
+   "MOVINGEDGESITE"
+   "<MOVINGEDGESITES>"
+   "MOVINGEDGESITES"
+   "<TRACKERSETTINGS>"
+   "TRACKERSETTINGS"
+  ))
+

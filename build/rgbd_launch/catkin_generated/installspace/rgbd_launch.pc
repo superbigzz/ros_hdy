@@ -1,0 +1,8 @@
+prefix=/home/hdy/catkin_ws/install
+
+Name: rgbd_launch
+Description: Description of rgbd_launch
+Version: 2.1.3
+Cflags: 
+Libs: -L/home/hdy/catkin_ws/install/lib 
+Requires: 
