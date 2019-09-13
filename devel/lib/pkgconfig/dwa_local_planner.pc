@@ -1,0 +1,8 @@
+prefix=/home/hdy/catkin_ws/devel
+
+Name: dwa_local_planner
+Description: Description of dwa_local_planner
+Version: 1.12.16
+Cflags: -I/home/hdy/catkin_ws/devel/include -I/home/hdy/catkin_ws/src/dwa_local_planner/include
+Libs: -L/home/hdy/catkin_ws/devel/lib -ldwa_local_planner
+Requires: dynamic_reconfigure nav_msgs pluginlib roscpp

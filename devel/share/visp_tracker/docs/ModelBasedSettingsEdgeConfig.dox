@@ -1,0 +1,15 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~angle_appear" : \b [double] Maximal angle value to consider an appearing face min: 0.0, default: 65.0, max: 90.0
+- \b "~angle_disappear" : \b [double] Minimal angle value to consider that a face disappear min: 0.0, default: 75.0, max: 90.0
+- \b "~mask_size" : \b [int] mask size min: 3, default: 7, max: 15
+- \b "~range" : \b [int] range min: 0, default: 5, max: 50
+- \b "~threshold" : \b [double] threshold min: 0.0, default: 2000.0, max: 20000.0
+- \b "~mu1" : \b [double] contrast continuity (mu1) min: 0.0, default: 0.5, max: 1.0
+- \b "~mu2" : \b [double] contrast continuity (mu2) min: 0.0, default: 0.5, max: 1.0
+- \b "~sample_step" : \b [double] sample step min: 1.0, default: 3.0, max: 50.0
+- \b "~strip" : \b [int] strip min: 0, default: 2, max: 10
+- \b "~first_threshold" : \b [double] good samples remaining threshold before reinitialization (edge) min: 0.0, default: 0.4, max: 1.0
+

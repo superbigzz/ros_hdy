@@ -1,0 +1,8 @@
+prefix=/home/hdy/catkin_ws/install
+
+Name: aruco
+Description: Description of aruco
+Version: 0.2.4
+Cflags: -I/home/hdy/catkin_ws/install/include
+Libs: -L/home/hdy/catkin_ws/install/lib -laruco
+Requires: 
