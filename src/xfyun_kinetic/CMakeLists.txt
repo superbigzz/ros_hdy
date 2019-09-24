@@ -117,6 +117,7 @@ catkin_package(
 ## Your package locations should be listed before other locations
 # include_directories(include)
 include_directories(
+  include ${catkin_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
   include
 )
@@ -267,4 +268,12 @@ add_dependencies(iat_file ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_
 target_link_libraries(iat_file
   ${catkin_LIBRARIES}
    ${LIBS} 
+)
+
+add_executable(hdy_node
+  src/hdy_node.cpp
+)
+add_dependencies(hdy_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_node
+  ${catkin_LIBRARIES}
 )

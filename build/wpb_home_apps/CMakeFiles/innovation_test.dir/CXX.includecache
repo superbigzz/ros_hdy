@@ -227,6 +227,8 @@ string
 /home/hdy/catkin_ws/src/wpb_home_apps/src/action_manager/action_manager.cpp
 action_manager.h
 /home/hdy/catkin_ws/src/wpb_home_apps/src/action_manager/action_manager.h
+std_msgs/Bool.h
+/home/hdy/catkin_ws/src/wpb_home_apps/src/action_manager/std_msgs/Bool.h
 
 /home/hdy/catkin_ws/src/wpb_home_apps/src/innovation_test.cpp
 ros/ros.h
@@ -3302,6 +3304,22 @@ cstdlib
 stdexcept
 -
 string
+-
+
+/opt/ros/kinetic/include/std_msgs/Bool.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 
 /opt/ros/kinetic/include/std_msgs/Empty.h

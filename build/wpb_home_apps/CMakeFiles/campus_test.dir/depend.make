@@ -274,6 +274,7 @@ wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.o
 wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/sensor_msgs/PointField.h
 wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/sensor_msgs/RegionOfInterest.h
 wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/sensor_msgs/image_encodings.h
+wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/std_msgs/Bool.h
 wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/std_msgs/Empty.h
 wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/std_msgs/String.h

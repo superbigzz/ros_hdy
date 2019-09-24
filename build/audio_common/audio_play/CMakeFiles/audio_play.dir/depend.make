@@ -156,6 +156,9 @@ audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o: /usr/inc
 audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o: /usr/include/glib-2.0/gobject/gvalue.h
 audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o: /usr/include/glib-2.0/gobject/gvaluearray.h
 audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o: /usr/include/glib-2.0/gobject/gvaluetypes.h
+audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o: /usr/include/gstreamer-1.0/gst/app/gstappsrc.h
+audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o: /usr/include/gstreamer-1.0/gst/base/gstbasesrc.h
+audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o: /usr/include/gstreamer-1.0/gst/base/gstpushsrc.h
 audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o: /usr/include/gstreamer-1.0/gst/glib-compat.h
 audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o: /usr/include/gstreamer-1.0/gst/gst.h
 audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o: /usr/include/gstreamer-1.0/gst/gstallocator.h

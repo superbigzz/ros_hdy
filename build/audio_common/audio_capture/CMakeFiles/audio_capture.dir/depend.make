@@ -156,6 +156,8 @@ audio_common/audio_capture/CMakeFiles/audio_capture.dir/src/audio_capture.cpp.o:
 audio_common/audio_capture/CMakeFiles/audio_capture.dir/src/audio_capture.cpp.o: /usr/include/glib-2.0/gobject/gvalue.h
 audio_common/audio_capture/CMakeFiles/audio_capture.dir/src/audio_capture.cpp.o: /usr/include/glib-2.0/gobject/gvaluearray.h
 audio_common/audio_capture/CMakeFiles/audio_capture.dir/src/audio_capture.cpp.o: /usr/include/glib-2.0/gobject/gvaluetypes.h
+audio_common/audio_capture/CMakeFiles/audio_capture.dir/src/audio_capture.cpp.o: /usr/include/gstreamer-1.0/gst/app/gstappsink.h
+audio_common/audio_capture/CMakeFiles/audio_capture.dir/src/audio_capture.cpp.o: /usr/include/gstreamer-1.0/gst/base/gstbasesink.h
 audio_common/audio_capture/CMakeFiles/audio_capture.dir/src/audio_capture.cpp.o: /usr/include/gstreamer-1.0/gst/glib-compat.h
 audio_common/audio_capture/CMakeFiles/audio_capture.dir/src/audio_capture.cpp.o: /usr/include/gstreamer-1.0/gst/gst.h
 audio_common/audio_capture/CMakeFiles/audio_capture.dir/src/audio_capture.cpp.o: /usr/include/gstreamer-1.0/gst/gstallocator.h

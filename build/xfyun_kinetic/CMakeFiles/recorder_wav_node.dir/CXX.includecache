@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/hdy/catkin_ws/devel/include/sound_play/SoundRequest.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitch.h
 ros/service_traits.h
 -
@@ -709,22 +725,6 @@ ros/forwards.h
 /opt/ros/kinetic/include/ros/ros/forwards.h
 
 /opt/ros/kinetic/include/rosconsole/macros_generated.h
-
-/opt/ros/kinetic/include/sound_play/SoundRequest.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
 
 /opt/ros/kinetic/include/std_msgs/String.h
 string

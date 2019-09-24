@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = /home/hdy/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -77,17 +88,6 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -98,6 +98,18 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -120,18 +132,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -271,6 +271,21 @@ campus_test/fast:
 .PHONY : campus_test/fast
 
 # Convenience name for target.
+wpb_home_apps/CMakeFiles/innovation_test.dir/rule:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wpb_home_apps/CMakeFiles/innovation_test.dir/rule
+.PHONY : wpb_home_apps/CMakeFiles/innovation_test.dir/rule
+
+# Convenience name for target.
+innovation_test: wpb_home_apps/CMakeFiles/innovation_test.dir/rule
+
+.PHONY : innovation_test
+
+# fast build rule for target.
+innovation_test/fast:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/innovation_test.dir/build.make wpb_home_apps/CMakeFiles/innovation_test.dir/build
+.PHONY : innovation_test/fast
+
+# Convenience name for target.
 wpb_home_apps/CMakeFiles/who_is_who.dir/rule:
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wpb_home_apps/CMakeFiles/who_is_who.dir/rule
 .PHONY : wpb_home_apps/CMakeFiles/who_is_who.dir/rule
@@ -331,6 +346,21 @@ recreational_test/fast:
 .PHONY : recreational_test/fast
 
 # Convenience name for target.
+wpb_home_apps/CMakeFiles/free_test.dir/rule:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wpb_home_apps/CMakeFiles/free_test.dir/rule
+.PHONY : wpb_home_apps/CMakeFiles/free_test.dir/rule
+
+# Convenience name for target.
+free_test: wpb_home_apps/CMakeFiles/free_test.dir/rule
+
+.PHONY : free_test
+
+# fast build rule for target.
+free_test/fast:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/free_test.dir/build.make wpb_home_apps/CMakeFiles/free_test.dir/build
+.PHONY : free_test/fast
+
+# Convenience name for target.
 wpb_home_apps/CMakeFiles/object_recognition.dir/rule:
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wpb_home_apps/CMakeFiles/object_recognition.dir/rule
 .PHONY : wpb_home_apps/CMakeFiles/object_recognition.dir/rule
@@ -376,34 +406,49 @@ object_find/fast:
 .PHONY : object_find/fast
 
 # Convenience name for target.
-wpb_home_apps/CMakeFiles/free_test.dir/rule:
-	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wpb_home_apps/CMakeFiles/free_test.dir/rule
-.PHONY : wpb_home_apps/CMakeFiles/free_test.dir/rule
+wpb_home_apps/CMakeFiles/hdy_drink.dir/rule:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wpb_home_apps/CMakeFiles/hdy_drink.dir/rule
+.PHONY : wpb_home_apps/CMakeFiles/hdy_drink.dir/rule
 
 # Convenience name for target.
-free_test: wpb_home_apps/CMakeFiles/free_test.dir/rule
+hdy_drink: wpb_home_apps/CMakeFiles/hdy_drink.dir/rule
 
-.PHONY : free_test
+.PHONY : hdy_drink
 
 # fast build rule for target.
-free_test/fast:
-	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/free_test.dir/build.make wpb_home_apps/CMakeFiles/free_test.dir/build
-.PHONY : free_test/fast
+hdy_drink/fast:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/build
+.PHONY : hdy_drink/fast
 
 # Convenience name for target.
-wpb_home_apps/CMakeFiles/innovation_test.dir/rule:
-	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wpb_home_apps/CMakeFiles/innovation_test.dir/rule
-.PHONY : wpb_home_apps/CMakeFiles/innovation_test.dir/rule
+wpb_home_apps/CMakeFiles/hdy_shopping.dir/rule:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wpb_home_apps/CMakeFiles/hdy_shopping.dir/rule
+.PHONY : wpb_home_apps/CMakeFiles/hdy_shopping.dir/rule
 
 # Convenience name for target.
-innovation_test: wpb_home_apps/CMakeFiles/innovation_test.dir/rule
+hdy_shopping: wpb_home_apps/CMakeFiles/hdy_shopping.dir/rule
 
-.PHONY : innovation_test
+.PHONY : hdy_shopping
 
 # fast build rule for target.
-innovation_test/fast:
-	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/innovation_test.dir/build.make wpb_home_apps/CMakeFiles/innovation_test.dir/build
-.PHONY : innovation_test/fast
+hdy_shopping/fast:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_shopping.dir/build.make wpb_home_apps/CMakeFiles/hdy_shopping.dir/build
+.PHONY : hdy_shopping/fast
+
+# Convenience name for target.
+wpb_home_apps/CMakeFiles/hdy_home.dir/rule:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wpb_home_apps/CMakeFiles/hdy_home.dir/rule
+.PHONY : wpb_home_apps/CMakeFiles/hdy_home.dir/rule
+
+# Convenience name for target.
+hdy_home: wpb_home_apps/CMakeFiles/hdy_home.dir/rule
+
+.PHONY : hdy_home
+
+# fast build rule for target.
+hdy_home/fast:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_home.dir/build.make wpb_home_apps/CMakeFiles/hdy_home.dir/build
+.PHONY : hdy_home/fast
 
 src/action_manager/action_manager.o: src/action_manager/action_manager.cpp.o
 
@@ -413,11 +458,12 @@ src/action_manager/action_manager.o: src/action_manager/action_manager.cpp.o
 src/action_manager/action_manager.cpp.o:
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/home_test.dir/build.make wpb_home_apps/CMakeFiles/home_test.dir/src/action_manager/action_manager.cpp.o
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/campus_test.dir/build.make wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.o
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/innovation_test.dir/build.make wpb_home_apps/CMakeFiles/innovation_test.dir/src/action_manager/action_manager.cpp.o
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/gpsr.dir/build.make wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/recreational_test.dir/build.make wpb_home_apps/CMakeFiles/recreational_test.dir/src/action_manager/action_manager.cpp.o
-	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/path_plan.dir/build.make wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/free_test.dir/build.make wpb_home_apps/CMakeFiles/free_test.dir/src/action_manager/action_manager.cpp.o
-	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/innovation_test.dir/build.make wpb_home_apps/CMakeFiles/innovation_test.dir/src/action_manager/action_manager.cpp.o
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/path_plan.dir/build.make wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/src/action_manager/action_manager.cpp.o
 .PHONY : src/action_manager/action_manager.cpp.o
 
 src/action_manager/action_manager.i: src/action_manager/action_manager.cpp.i
@@ -428,11 +474,12 @@ src/action_manager/action_manager.i: src/action_manager/action_manager.cpp.i
 src/action_manager/action_manager.cpp.i:
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/home_test.dir/build.make wpb_home_apps/CMakeFiles/home_test.dir/src/action_manager/action_manager.cpp.i
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/campus_test.dir/build.make wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.i
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/innovation_test.dir/build.make wpb_home_apps/CMakeFiles/innovation_test.dir/src/action_manager/action_manager.cpp.i
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/gpsr.dir/build.make wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.i
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/recreational_test.dir/build.make wpb_home_apps/CMakeFiles/recreational_test.dir/src/action_manager/action_manager.cpp.i
-	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/path_plan.dir/build.make wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.i
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/free_test.dir/build.make wpb_home_apps/CMakeFiles/free_test.dir/src/action_manager/action_manager.cpp.i
-	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/innovation_test.dir/build.make wpb_home_apps/CMakeFiles/innovation_test.dir/src/action_manager/action_manager.cpp.i
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/path_plan.dir/build.make wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.i
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/src/action_manager/action_manager.cpp.i
 .PHONY : src/action_manager/action_manager.cpp.i
 
 src/action_manager/action_manager.s: src/action_manager/action_manager.cpp.s
@@ -443,11 +490,12 @@ src/action_manager/action_manager.s: src/action_manager/action_manager.cpp.s
 src/action_manager/action_manager.cpp.s:
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/home_test.dir/build.make wpb_home_apps/CMakeFiles/home_test.dir/src/action_manager/action_manager.cpp.s
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/campus_test.dir/build.make wpb_home_apps/CMakeFiles/campus_test.dir/src/action_manager/action_manager.cpp.s
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/innovation_test.dir/build.make wpb_home_apps/CMakeFiles/innovation_test.dir/src/action_manager/action_manager.cpp.s
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/gpsr.dir/build.make wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.s
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/recreational_test.dir/build.make wpb_home_apps/CMakeFiles/recreational_test.dir/src/action_manager/action_manager.cpp.s
-	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/path_plan.dir/build.make wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.s
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/free_test.dir/build.make wpb_home_apps/CMakeFiles/free_test.dir/src/action_manager/action_manager.cpp.s
-	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/innovation_test.dir/build.make wpb_home_apps/CMakeFiles/innovation_test.dir/src/action_manager/action_manager.cpp.s
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/path_plan.dir/build.make wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.s
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/src/action_manager/action_manager.cpp.s
 .PHONY : src/action_manager/action_manager.cpp.s
 
 src/campus_test.o: src/campus_test.cpp.o
@@ -584,6 +632,87 @@ src/gpsr.s: src/gpsr.cpp.s
 src/gpsr.cpp.s:
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/gpsr.dir/build.make wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.s
 .PHONY : src/gpsr.cpp.s
+
+src/hdy_drink.o: src/hdy_drink.cpp.o
+
+.PHONY : src/hdy_drink.o
+
+# target to build an object file
+src/hdy_drink.cpp.o:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/src/hdy_drink.cpp.o
+.PHONY : src/hdy_drink.cpp.o
+
+src/hdy_drink.i: src/hdy_drink.cpp.i
+
+.PHONY : src/hdy_drink.i
+
+# target to preprocess a source file
+src/hdy_drink.cpp.i:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/src/hdy_drink.cpp.i
+.PHONY : src/hdy_drink.cpp.i
+
+src/hdy_drink.s: src/hdy_drink.cpp.s
+
+.PHONY : src/hdy_drink.s
+
+# target to generate assembly for a file
+src/hdy_drink.cpp.s:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/src/hdy_drink.cpp.s
+.PHONY : src/hdy_drink.cpp.s
+
+src/hdy_home.o: src/hdy_home.cpp.o
+
+.PHONY : src/hdy_home.o
+
+# target to build an object file
+src/hdy_home.cpp.o:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_home.dir/build.make wpb_home_apps/CMakeFiles/hdy_home.dir/src/hdy_home.cpp.o
+.PHONY : src/hdy_home.cpp.o
+
+src/hdy_home.i: src/hdy_home.cpp.i
+
+.PHONY : src/hdy_home.i
+
+# target to preprocess a source file
+src/hdy_home.cpp.i:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_home.dir/build.make wpb_home_apps/CMakeFiles/hdy_home.dir/src/hdy_home.cpp.i
+.PHONY : src/hdy_home.cpp.i
+
+src/hdy_home.s: src/hdy_home.cpp.s
+
+.PHONY : src/hdy_home.s
+
+# target to generate assembly for a file
+src/hdy_home.cpp.s:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_home.dir/build.make wpb_home_apps/CMakeFiles/hdy_home.dir/src/hdy_home.cpp.s
+.PHONY : src/hdy_home.cpp.s
+
+src/hdy_shopping.o: src/hdy_shopping.cpp.o
+
+.PHONY : src/hdy_shopping.o
+
+# target to build an object file
+src/hdy_shopping.cpp.o:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_shopping.dir/build.make wpb_home_apps/CMakeFiles/hdy_shopping.dir/src/hdy_shopping.cpp.o
+.PHONY : src/hdy_shopping.cpp.o
+
+src/hdy_shopping.i: src/hdy_shopping.cpp.i
+
+.PHONY : src/hdy_shopping.i
+
+# target to preprocess a source file
+src/hdy_shopping.cpp.i:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_shopping.dir/build.make wpb_home_apps/CMakeFiles/hdy_shopping.dir/src/hdy_shopping.cpp.i
+.PHONY : src/hdy_shopping.cpp.i
+
+src/hdy_shopping.s: src/hdy_shopping.cpp.s
+
+.PHONY : src/hdy_shopping.s
+
+# target to generate assembly for a file
+src/hdy_shopping.cpp.s:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_shopping.dir/build.make wpb_home_apps/CMakeFiles/hdy_shopping.dir/src/hdy_shopping.cpp.s
+.PHONY : src/hdy_shopping.cpp.s
 
 src/home_test.o: src/home_test.cpp.o
 
@@ -882,6 +1011,33 @@ src/scripts/free_script.cpp.s:
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/free_test.dir/build.make wpb_home_apps/CMakeFiles/free_test.dir/src/scripts/free_script.cpp.s
 .PHONY : src/scripts/free_script.cpp.s
 
+src/scripts/hdy_drink_script.o: src/scripts/hdy_drink_script.cpp.o
+
+.PHONY : src/scripts/hdy_drink_script.o
+
+# target to build an object file
+src/scripts/hdy_drink_script.cpp.o:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/src/scripts/hdy_drink_script.cpp.o
+.PHONY : src/scripts/hdy_drink_script.cpp.o
+
+src/scripts/hdy_drink_script.i: src/scripts/hdy_drink_script.cpp.i
+
+.PHONY : src/scripts/hdy_drink_script.i
+
+# target to preprocess a source file
+src/scripts/hdy_drink_script.cpp.i:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/src/scripts/hdy_drink_script.cpp.i
+.PHONY : src/scripts/hdy_drink_script.cpp.i
+
+src/scripts/hdy_drink_script.s: src/scripts/hdy_drink_script.cpp.s
+
+.PHONY : src/scripts/hdy_drink_script.s
+
+# target to generate assembly for a file
+src/scripts/hdy_drink_script.cpp.s:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/src/scripts/hdy_drink_script.cpp.s
+.PHONY : src/scripts/hdy_drink_script.cpp.s
+
 src/scripts/home_script.o: src/scripts/home_script.cpp.o
 
 .PHONY : src/scripts/home_script.o
@@ -1023,6 +1179,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
 	@echo "... entrance_detect"
 	@echo "... follow"
 	@echo "... person_recognition"
@@ -1031,21 +1188,23 @@ help:
 	@echo "... install/strip"
 	@echo "... shopping"
 	@echo "... home_test"
-	@echo "... rebuild_cache"
 	@echo "... campus_test"
 	@echo "... test"
+	@echo "... install"
+	@echo "... innovation_test"
 	@echo "... who_is_who"
 	@echo "... python_test"
 	@echo "... install/local"
 	@echo "... gpsr"
 	@echo "... recreational_test"
+	@echo "... edit_cache"
+	@echo "... free_test"
 	@echo "... object_recognition"
 	@echo "... path_plan"
 	@echo "... object_find"
-	@echo "... free_test"
-	@echo "... edit_cache"
-	@echo "... innovation_test"
-	@echo "... install"
+	@echo "... hdy_drink"
+	@echo "... hdy_shopping"
+	@echo "... hdy_home"
 	@echo "... src/action_manager/action_manager.o"
 	@echo "... src/action_manager/action_manager.i"
 	@echo "... src/action_manager/action_manager.s"
@@ -1064,6 +1223,15 @@ help:
 	@echo "... src/gpsr.o"
 	@echo "... src/gpsr.i"
 	@echo "... src/gpsr.s"
+	@echo "... src/hdy_drink.o"
+	@echo "... src/hdy_drink.i"
+	@echo "... src/hdy_drink.s"
+	@echo "... src/hdy_home.o"
+	@echo "... src/hdy_home.i"
+	@echo "... src/hdy_home.s"
+	@echo "... src/hdy_shopping.o"
+	@echo "... src/hdy_shopping.i"
+	@echo "... src/hdy_shopping.s"
 	@echo "... src/home_test.o"
 	@echo "... src/home_test.i"
 	@echo "... src/home_test.s"
@@ -1097,6 +1265,9 @@ help:
 	@echo "... src/scripts/free_script.o"
 	@echo "... src/scripts/free_script.i"
 	@echo "... src/scripts/free_script.s"
+	@echo "... src/scripts/hdy_drink_script.o"
+	@echo "... src/scripts/hdy_drink_script.i"
+	@echo "... src/scripts/hdy_drink_script.s"
 	@echo "... src/scripts/home_script.o"
 	@echo "... src/scripts/home_script.i"
 	@echo "... src/scripts/home_script.s"

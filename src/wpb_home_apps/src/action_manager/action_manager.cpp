@@ -34,6 +34,7 @@
 /* @author Zhang Wanjie                                             */
 
 #include "action_manager.h"
+#include "std_msgs/Bool.h"
 
 
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
@@ -207,6 +208,13 @@ void poseCallback(const geometry_msgs::PoseStamped::ConstPtr& msg)
     callback = true;
     //Callback_flag = true;
 }
+/****订阅物体检测标志位，回调函数****/
+bool detect_flag = 0;
+void FlagCallback(const std_msgs::Bool::ConstPtr& msg)
+{
+    detect_flag = msg;
+    //ROS_INFO("detect_flag: %d", detect_flag); 
+}
 
 void InitGoal()
 {
@@ -320,6 +328,37 @@ bool CActionManager::Main()
             nCurActIndex ++;
 		}
 		break;
+    /****物体检测****/
+	case ACT_OBJ_DET:
+		if (nLastActCode != ACT_OBJ_DET)
+		{
+            bool arrive_flag = 1;
+            detect_flag = 0;
+             
+            //发送到达标志位
+            ros::NodeHandle narrive;
+            ros::Publisher arrive_pub = narrive.advertise<std_msgs::Bool>("arrive_flag", 1);
+
+                //订阅检测标志位消息
+            ros::NodeHandle ndetect;
+            ros::Subscriber detect_sub = ndetect.subscribe("detect_flag", 1, FlagCallback);
+            ros::Rate loop_rate(10);  //自循环频率
+
+            while(ros::ok())
+            {
+                std_msgs::Bool msg;
+                msg.data = arrive_flag;
+
+                arrive_pub.publish(msg);
+                loop_rate.sleep();
+
+                if(detect_flag == 1)break;
+
+                ros::spinOnce();
+            }
+
+		}
+		break;
 
 	case ACT_GRAB:
 		if (nLastActCode != ACT_GRAB)
@@ -381,6 +420,12 @@ bool CActionManager::Main()
             srvIAT.request.duration = nDur;
             clientIAT.call(srvIAT);
 		}
+        /**HDY ADD20190919
+        if(strListen.find("跟着我") >=0)keyword = "follow";
+        else if(strListen.find("书房") >=0)keyword = "study";
+        else if(strListen.find("厨房") >=0)keyword = "kitchen";
+        else if(strListen.find("客厅") >=0)keyword = "living";
+        /**HDY ADD20190919**/
         nKeyWord = strListen.find(strKeyWord);
         if(nKeyWord >= 0)
         {
@@ -510,6 +555,11 @@ string ActionText(stAct* inAct)
     if(inAct->nAct == ACT_FIND_OBJ)
     {
         ActText = "搜索物品 ";
+        ActText += inAct->strTarget;
+    }
+    if(inAct->nAct == ACT_OBJ_DET)
+    {
+        ActText = "物品检测 ";
         ActText += inAct->strTarget;
     }
     if(inAct->nAct == ACT_GRAB)

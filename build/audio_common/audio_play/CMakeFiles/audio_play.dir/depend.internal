@@ -157,6 +157,9 @@ audio_common/audio_play/CMakeFiles/audio_play.dir/src/audio_play.cpp.o
  /usr/include/glib-2.0/gobject/gvalue.h
  /usr/include/glib-2.0/gobject/gvaluearray.h
  /usr/include/glib-2.0/gobject/gvaluetypes.h
+ /usr/include/gstreamer-1.0/gst/app/gstappsrc.h
+ /usr/include/gstreamer-1.0/gst/base/gstbasesrc.h
+ /usr/include/gstreamer-1.0/gst/base/gstpushsrc.h
  /usr/include/gstreamer-1.0/gst/glib-compat.h
  /usr/include/gstreamer-1.0/gst/gst.h
  /usr/include/gstreamer-1.0/gst/gstallocator.h

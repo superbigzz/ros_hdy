@@ -14,6 +14,7 @@ using namespace std;
 #define ACT_FOLLOW			8
 #define ACT_ADD_WAYPOINT	9
 #define ACT_GOAL			10
+#define ACT_OBJ_DET			11
 
 #define ACT_REC_VIDEO		101
 #define ACT_PLAY_VIDEO		102

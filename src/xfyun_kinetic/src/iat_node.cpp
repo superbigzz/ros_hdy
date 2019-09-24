@@ -19,7 +19,7 @@ static std::string strTonePlay;
 #define	BUFFER_SIZE	4096
 
 static ros::Publisher iat_pub;
-static int nRecDuring = 10;
+static int nRecDuring = 6;
 
 static char *g_result = NULL;
 static unsigned int g_buffersize = BUFFER_SIZE;

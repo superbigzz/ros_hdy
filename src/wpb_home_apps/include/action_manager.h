@@ -90,6 +90,8 @@ public:
 	bool bGrabDone;
 	bool bPassDone;
 
+	std::string keyword; 
+
 	bool Main();
 	void Init();
 	void Reset();

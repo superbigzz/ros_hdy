@@ -1370,6 +1370,22 @@ gobject/gvalue.h
 gobject/gvalue.h
 -
 
+/usr/include/gstreamer-1.0/gst/app/gstappsrc.h
+gst/gst.h
+-
+gst/base/gstpushsrc.h
+-
+
+/usr/include/gstreamer-1.0/gst/base/gstbasesrc.h
+gst/gst.h
+-
+
+/usr/include/gstreamer-1.0/gst/base/gstpushsrc.h
+gst/gst.h
+-
+gst/base/gstbasesrc.h
+-
+
 /usr/include/gstreamer-1.0/gst/glib-compat.h
 glib.h
 -

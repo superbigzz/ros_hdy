@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/hdy/catkin_ws/devel/include/sound_play/SoundRequest.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/hdy/catkin_ws/devel/include/waterplus_map_tools/GetWaypointByName.h
 ros/service_traits.h
 -
@@ -223,6 +239,8 @@ string
 /home/hdy/catkin_ws/src/wpb_home_apps/src/action_manager/action_manager.cpp
 action_manager.h
 /home/hdy/catkin_ws/src/wpb_home_apps/src/action_manager/action_manager.h
+std_msgs/Bool.h
+/home/hdy/catkin_ws/src/wpb_home_apps/src/action_manager/std_msgs/Bool.h
 
 /home/hdy/catkin_ws/src/wpb_home_apps/src/gpsr.cpp
 ros/ros.h
@@ -3308,7 +3326,7 @@ stdexcept
 string
 -
 
-/opt/ros/kinetic/include/sound_play/SoundRequest.h
+/opt/ros/kinetic/include/std_msgs/Bool.h
 string
 -
 vector

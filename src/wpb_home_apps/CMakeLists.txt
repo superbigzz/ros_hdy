@@ -359,3 +359,29 @@ add_dependencies(python_test ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORT
 target_link_libraries(python_test
   ${catkin_LIBRARIES} python2.7
 )
+
+add_executable(hdy_shopping
+  src/hdy_shopping.cpp
+)
+add_dependencies(hdy_shopping ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_shopping
+  ${catkin_LIBRARIES}
+)
+
+add_executable(hdy_drink
+  src/hdy_drink.cpp
+  src/action_manager/action_manager.cpp
+  src/scripts/hdy_drink_script.cpp
+)
+add_dependencies(hdy_drink ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_drink
+  ${catkin_LIBRARIES}
+)
+
+add_executable(hdy_home
+  src/hdy_home.cpp
+)
+add_dependencies(hdy_home ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_home
+  ${catkin_LIBRARIES}
+)

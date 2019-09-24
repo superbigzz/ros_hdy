@@ -256,6 +256,21 @@ tts_node/fast:
 .PHONY : tts_node/fast
 
 # Convenience name for target.
+xfyun_kinetic/CMakeFiles/hdy_node.dir/rule:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xfyun_kinetic/CMakeFiles/hdy_node.dir/rule
+.PHONY : xfyun_kinetic/CMakeFiles/hdy_node.dir/rule
+
+# Convenience name for target.
+hdy_node: xfyun_kinetic/CMakeFiles/hdy_node.dir/rule
+
+.PHONY : hdy_node
+
+# fast build rule for target.
+hdy_node/fast:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f xfyun_kinetic/CMakeFiles/hdy_node.dir/build.make xfyun_kinetic/CMakeFiles/hdy_node.dir/build
+.PHONY : hdy_node/fast
+
+# Convenience name for target.
 xfyun_kinetic/CMakeFiles/xfyun_waterplus_geneus.dir/rule:
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xfyun_kinetic/CMakeFiles/xfyun_waterplus_geneus.dir/rule
 .PHONY : xfyun_kinetic/CMakeFiles/xfyun_waterplus_geneus.dir/rule
@@ -476,6 +491,33 @@ src/asr_node.s: src/asr_node.cpp.s
 src/asr_node.cpp.s:
 	cd /home/hdy/catkin_ws/build && $(MAKE) -f xfyun_kinetic/CMakeFiles/asr_node.dir/build.make xfyun_kinetic/CMakeFiles/asr_node.dir/src/asr_node.cpp.s
 .PHONY : src/asr_node.cpp.s
+
+src/hdy_node.o: src/hdy_node.cpp.o
+
+.PHONY : src/hdy_node.o
+
+# target to build an object file
+src/hdy_node.cpp.o:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f xfyun_kinetic/CMakeFiles/hdy_node.dir/build.make xfyun_kinetic/CMakeFiles/hdy_node.dir/src/hdy_node.cpp.o
+.PHONY : src/hdy_node.cpp.o
+
+src/hdy_node.i: src/hdy_node.cpp.i
+
+.PHONY : src/hdy_node.i
+
+# target to preprocess a source file
+src/hdy_node.cpp.i:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f xfyun_kinetic/CMakeFiles/hdy_node.dir/build.make xfyun_kinetic/CMakeFiles/hdy_node.dir/src/hdy_node.cpp.i
+.PHONY : src/hdy_node.cpp.i
+
+src/hdy_node.s: src/hdy_node.cpp.s
+
+.PHONY : src/hdy_node.s
+
+# target to generate assembly for a file
+src/hdy_node.cpp.s:
+	cd /home/hdy/catkin_ws/build && $(MAKE) -f xfyun_kinetic/CMakeFiles/hdy_node.dir/build.make xfyun_kinetic/CMakeFiles/hdy_node.dir/src/hdy_node.cpp.s
+.PHONY : src/hdy_node.cpp.s
 
 src/iat_file.o: src/iat_file.cpp.o
 
@@ -715,12 +757,14 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... xfyun_waterplus_gennodejs"
 	@echo "... xfyun_waterplus_generate_messages_nodejs"
 	@echo "... xfyun_waterplus_generate_messages_cpp"
 	@echo "... xfyun_waterplus_genlisp"
 	@echo "... xfyun_waterplus_generate_messages_lisp"
 	@echo "... tts_node"
+	@echo "... hdy_node"
 	@echo "... xfyun_waterplus_geneus"
 	@echo "... xfyun_waterplus_generate_messages_eus"
 	@echo "... xfyun_waterplus_generate_messages"
@@ -732,7 +776,6 @@ help:
 	@echo "... wp_voice_cmd_cn"
 	@echo "... wav_rate_node"
 	@echo "... recorder_wav_node"
-	@echo "... test"
 	@echo "... asr_node"
 	@echo "... iat_file"
 	@echo "... install/local"
@@ -740,6 +783,9 @@ help:
 	@echo "... src/asr_node.o"
 	@echo "... src/asr_node.i"
 	@echo "... src/asr_node.s"
+	@echo "... src/hdy_node.o"
+	@echo "... src/hdy_node.i"
+	@echo "... src/hdy_node.s"
 	@echo "... src/iat_file.o"
 	@echo "... src/iat_file.i"
 	@echo "... src/iat_file.s"

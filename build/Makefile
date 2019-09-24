@@ -6211,6 +6211,19 @@ tts_node/fast:
 .PHONY : tts_node/fast
 
 #=============================================================================
+# Target rules for targets named hdy_node
+
+# Build rule for target.
+hdy_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hdy_node
+.PHONY : hdy_node
+
+# fast build rule for target.
+hdy_node/fast:
+	$(MAKE) -f xfyun_kinetic/CMakeFiles/hdy_node.dir/build.make xfyun_kinetic/CMakeFiles/hdy_node.dir/build
+.PHONY : hdy_node/fast
+
+#=============================================================================
 # Target rules for targets named xfyun_waterplus_geneus
 
 # Build rule for target.
@@ -6471,6 +6484,19 @@ campus_test/fast:
 .PHONY : campus_test/fast
 
 #=============================================================================
+# Target rules for targets named innovation_test
+
+# Build rule for target.
+innovation_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 innovation_test
+.PHONY : innovation_test
+
+# fast build rule for target.
+innovation_test/fast:
+	$(MAKE) -f wpb_home_apps/CMakeFiles/innovation_test.dir/build.make wpb_home_apps/CMakeFiles/innovation_test.dir/build
+.PHONY : innovation_test/fast
+
+#=============================================================================
 # Target rules for targets named who_is_who
 
 # Build rule for target.
@@ -6523,6 +6549,19 @@ recreational_test/fast:
 .PHONY : recreational_test/fast
 
 #=============================================================================
+# Target rules for targets named free_test
+
+# Build rule for target.
+free_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 free_test
+.PHONY : free_test
+
+# fast build rule for target.
+free_test/fast:
+	$(MAKE) -f wpb_home_apps/CMakeFiles/free_test.dir/build.make wpb_home_apps/CMakeFiles/free_test.dir/build
+.PHONY : free_test/fast
+
+#=============================================================================
 # Target rules for targets named object_recognition
 
 # Build rule for target.
@@ -6562,30 +6601,43 @@ object_find/fast:
 .PHONY : object_find/fast
 
 #=============================================================================
-# Target rules for targets named free_test
+# Target rules for targets named hdy_drink
 
 # Build rule for target.
-free_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 free_test
-.PHONY : free_test
+hdy_drink: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hdy_drink
+.PHONY : hdy_drink
 
 # fast build rule for target.
-free_test/fast:
-	$(MAKE) -f wpb_home_apps/CMakeFiles/free_test.dir/build.make wpb_home_apps/CMakeFiles/free_test.dir/build
-.PHONY : free_test/fast
+hdy_drink/fast:
+	$(MAKE) -f wpb_home_apps/CMakeFiles/hdy_drink.dir/build.make wpb_home_apps/CMakeFiles/hdy_drink.dir/build
+.PHONY : hdy_drink/fast
 
 #=============================================================================
-# Target rules for targets named innovation_test
+# Target rules for targets named hdy_shopping
 
 # Build rule for target.
-innovation_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 innovation_test
-.PHONY : innovation_test
+hdy_shopping: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hdy_shopping
+.PHONY : hdy_shopping
 
 # fast build rule for target.
-innovation_test/fast:
-	$(MAKE) -f wpb_home_apps/CMakeFiles/innovation_test.dir/build.make wpb_home_apps/CMakeFiles/innovation_test.dir/build
-.PHONY : innovation_test/fast
+hdy_shopping/fast:
+	$(MAKE) -f wpb_home_apps/CMakeFiles/hdy_shopping.dir/build.make wpb_home_apps/CMakeFiles/hdy_shopping.dir/build
+.PHONY : hdy_shopping/fast
+
+#=============================================================================
+# Target rules for targets named hdy_home
+
+# Build rule for target.
+hdy_home: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hdy_home
+.PHONY : hdy_home
+
+# fast build rule for target.
+hdy_home/fast:
+	$(MAKE) -f wpb_home_apps/CMakeFiles/hdy_home.dir/build.make wpb_home_apps/CMakeFiles/hdy_home.dir/build
+.PHONY : hdy_home/fast
 
 # Help Target
 help:
@@ -7065,6 +7117,7 @@ help:
 	@echo "... xfyun_waterplus_genlisp"
 	@echo "... xfyun_waterplus_generate_messages_lisp"
 	@echo "... tts_node"
+	@echo "... hdy_node"
 	@echo "... xfyun_waterplus_geneus"
 	@echo "... xfyun_waterplus_generate_messages_eus"
 	@echo "... xfyun_waterplus_generate_messages"
@@ -7085,15 +7138,18 @@ help:
 	@echo "... shopping"
 	@echo "... home_test"
 	@echo "... campus_test"
+	@echo "... innovation_test"
 	@echo "... who_is_who"
 	@echo "... python_test"
 	@echo "... gpsr"
 	@echo "... recreational_test"
+	@echo "... free_test"
 	@echo "... object_recognition"
 	@echo "... path_plan"
 	@echo "... object_find"
-	@echo "... free_test"
-	@echo "... innovation_test"
+	@echo "... hdy_drink"
+	@echo "... hdy_shopping"
+	@echo "... hdy_home"
 .PHONY : help
 
 

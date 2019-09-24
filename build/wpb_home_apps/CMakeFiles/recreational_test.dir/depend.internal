@@ -275,6 +275,7 @@ wpb_home_apps/CMakeFiles/recreational_test.dir/src/action_manager/action_manager
  /opt/ros/kinetic/include/sensor_msgs/PointField.h
  /opt/ros/kinetic/include/sensor_msgs/RegionOfInterest.h
  /opt/ros/kinetic/include/sensor_msgs/image_encodings.h
+ /opt/ros/kinetic/include/std_msgs/Bool.h
  /opt/ros/kinetic/include/std_msgs/Empty.h
  /opt/ros/kinetic/include/std_msgs/Header.h
  /opt/ros/kinetic/include/std_msgs/String.h

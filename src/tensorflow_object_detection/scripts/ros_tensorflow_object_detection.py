@@ -20,42 +20,32 @@ import time
 from collections import defaultdict
 from io import StringIO
 from PIL import Image
+from std_msgs.msg import String
 
 #Here are the imports from the object detection module.
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
 
 ##机器人到达终点标志位
-flag = False
+action_flag = "stop"
 detect_flag = 0
 
 #####接收信息，判断是否到达终点####
 #回调函数
 def flag_callback(flag_data):
-    global flag   #改变全局变量需要加上global
-    flag  = flag_data.data
+    global action_flag   #改变全局变量需要加上global
+    action_flag  = flag_data
 
 #####初始化节点
 rospy.init_node('ros_tensorflow_ObjectDetection', anonymous=True)
 #订阅消息
-rospy.Subscriber("arrive_flag", Bool, flag_callback)
+rospy.Subscriber("arrive_action", String, flag_callback)
 ######
 ##等待机器人到达终点标志位
+'''
 while flag == False:
     print'wait for the flag'
     time.sleep(1)
-
-'''
-######物体检测完毕，发送标志位
-def send_detect_flag():
-    flag_pub = rospy.Publisher('detect_flag',Bool,queue_size=1)   #创建一个对象发布到主题hello_pub上去
-    r = rospy.Rate(10)    #设定速率为10
-    #detect_flag = 1
-    while not rospy.is_shutdown():      #在Ctrl+C时，退出循环
-        rospy.get_time()   
-        flag_pub.publish(detect_flag)
-        #print"send detect flag"
-        r.sleep()
 '''
 
 #####物体检测程序
@@ -67,10 +57,12 @@ class ObjectDetection():
 
         # Set model path and image topic
         model_path = rospy.get_param("~model_path", "")
-        image_topic = rospy.get_param("~image_topic", "")
+        model_labels = rospy.get_param("~model_labels", "")
+        #image_topic = rospy.get_param("~image_topic", "")
+        image_topic = "hdy_home/image_detection"
 
         self._cv_bridge = CvBridge()
-
+        '''
         # What model to download.
         MODEL_NAME = 'ssd_mobilenet_v1_coco_11_06_2017'
         #MODEL_NAME = 'ssd_mobilenet_v1_coco_2017_11_17'
@@ -82,18 +74,22 @@ class ObjectDetection():
 
         # List of the strings that is used to add correct label for each box.
         PATH_TO_LABELS = os.path.join(model_path+'/data', 'mscoco_label_map.pbtxt')
-
+        '''
+        PATH_TO_CKPT = model_path + '/frozen_inference_graph.pb'
+        PATH_TO_LABELS = model_labels + '/mscoco_label_map.pbtxt'
         NUM_CLASSES = 90
 
         # Download Model
-        rospy.loginfo("Downloading models...")
+        #rospy.loginfo("Downloading models...")
         #opener = urllib.request.URLopener()
         #opener.retrieve(DOWNLOAD_BASE + MODEL_FILE, MODEL_FILE)
+        '''
         tar_file = tarfile.open(MODEL_FILE)
         for file in tar_file.getmembers():
             file_name = os.path.basename(file.name)
             if 'frozen_inference_graph.pb' in file_name:
                     tar_file.extract(file, os.getcwd())
+        '''
 
         # Load a (frozen) Tensorflow model into memory.
         self.detection_graph = tf.Graph()
@@ -109,15 +105,17 @@ class ObjectDetection():
         categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
         self.category_index = label_map_util.create_category_index(categories)
 
-        # Initialize ROS Subscriber and Publisher
-        self._sub = rospy.Subscriber(image_topic, ROSImage, self.callback, queue_size=1)    
+        # Initialize ROS Subscriber and Publisher  
+        self._sub = rospy.Subscriber(image_topic, ROSImage, self.callback, queue_size=1)
         self._pub = rospy.Publisher('object_detection', ROSImage, queue_size=1)
-        self.flag_pub = rospy.Publisher('detect_flag',Bool,queue_size=1)   #创建一个对象发布到主题hello_pub上去
+        self.flag_pub = rospy.Publisher('detect_flag',Bool,queue_size=1)   #创建一个对象发布到主题flag_pub上去
+        #self.class_pub = rospy.Publisher('object_class',int,queue_size=1)   #创建一个对象发布到主题class_pub上去
         rospy.loginfo("Start object dectecter ...")
 
     def callback(self, image_msg):
         with self.detection_graph.as_default():
             with tf.Session(graph=self.detection_graph) as sess:
+
                 # ROS image data to cv data
                 cv_image = self._cv_bridge.imgmsg_to_cv2(image_msg, "bgr8")
                 pil_img = Image.fromarray(cv_image)             
@@ -161,20 +159,30 @@ class ObjectDetection():
                 s_boxes = boxes[scores > 0.5]
                 s_classes = classes[scores > 0.5]
                 s_scores = scores[scores > 0.5]
+                obj_class = s_classes.item
 
                 ####检测到瓶子，发送检测完成标志并结束检测程序
                 print(s_classes)
                 print(s_scores)
+                print(obj_class)
                 for i in range(len(s_classes)):
-                    if s_classes[i] == 44:
+                    if action_flag == "water" and s_classes[i] == 44:
                         print"bottle"
                         detect_flag = 1
+                        global action_flag
+                        action_flag = "stop"
+                    if action_flag == "book" and s_classes[i] == 84:
+                        print"book"
+                        detect_flag = 1
+                        global action_flag
+                        action_flag = "stop"
                     #rospy.signal_shutdown("stop detecting!")
 
                 # Publish objects image
                 ros_compressed_image=self._cv_bridge.cv2_to_imgmsg(image_np, encoding="bgr8")
                 self._pub.publish(ros_compressed_image)
                 self.flag_pub.publish(detect_flag)
+                #self.flag_pub.publish(obj_class)
 
     def shutdown(self):
         rospy.loginfo("Stopping the tensorflow object detection...")

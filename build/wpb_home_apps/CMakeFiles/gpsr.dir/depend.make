@@ -274,6 +274,7 @@ wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /opt/
 wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/sensor_msgs/PointField.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/sensor_msgs/RegionOfInterest.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/sensor_msgs/image_encodings.h
+wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/std_msgs/Bool.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/std_msgs/Empty.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/std_msgs/String.h
@@ -824,6 +825,7 @@ wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /usr/
 wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /usr/include/x86_64-linux-gnu/sys/time.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/action_manager/action_manager.cpp.o: /usr/include/x86_64-linux-gnu/sys/timeb.h
 
+wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /home/hdy/catkin_ws/devel/include/sound_play/SoundRequest.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /home/hdy/catkin_ws/devel/include/waterplus_map_tools/GetWaypointByName.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /home/hdy/catkin_ws/devel/include/waterplus_map_tools/GetWaypointByNameRequest.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /home/hdy/catkin_ws/devel/include/waterplus_map_tools/GetWaypointByNameResponse.h
@@ -1097,7 +1099,6 @@ wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /opt/ros/kinetic/include/senso
 wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /opt/ros/kinetic/include/sensor_msgs/PointField.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /opt/ros/kinetic/include/sensor_msgs/RegionOfInterest.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /opt/ros/kinetic/include/sensor_msgs/image_encodings.h
-wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /opt/ros/kinetic/include/sound_play/SoundRequest.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /opt/ros/kinetic/include/std_msgs/Empty.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 wpb_home_apps/CMakeFiles/gpsr.dir/src/gpsr.cpp.o: /opt/ros/kinetic/include/std_msgs/String.h
