@@ -14,7 +14,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "DISABLE_PNG"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
-  "QT_NO_DEBUG"
   "QT_WIDGETS_LIB"
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
@@ -48,6 +47,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/python2.7"
   "/home/hdy/catkin_ws/src/wpb_home_apps/include"
   "/home/hdy/catkin_ws/devel/include"
+  "/home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include"
+  "/home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include"
   "/home/hdy/catkin_ws/src/xfyun_kinetic/include"
   "/home/hdy/catkin_ws/src/waterplus_map_tools/include"
   "/opt/ros/kinetic/include"
@@ -67,6 +68,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/CMakeFiles/pcl_ros_filter.dir/DependInfo.cmake"
+  "/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/DependInfo.cmake"
   "/home/hdy/catkin_ws/build/waterplus_map_tools/CMakeFiles/waterplus_map_tools.dir/DependInfo.cmake"
   )
 

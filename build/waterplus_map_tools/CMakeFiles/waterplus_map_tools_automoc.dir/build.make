@@ -55,7 +55,7 @@ include waterplus_map_tools/CMakeFiles/waterplus_map_tools_automoc.dir/progress.
 
 waterplus_map_tools/CMakeFiles/waterplus_map_tools_automoc:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hdy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic moc for target waterplus_map_tools"
-	cd /home/hdy/catkin_ws/build/waterplus_map_tools && /usr/bin/cmake -E cmake_autogen /home/hdy/catkin_ws/build/waterplus_map_tools/CMakeFiles/waterplus_map_tools_automoc.dir/ ""
+	cd /home/hdy/catkin_ws/build/waterplus_map_tools && /usr/bin/cmake -E cmake_autogen /home/hdy/catkin_ws/build/waterplus_map_tools/CMakeFiles/waterplus_map_tools_automoc.dir/ Debug
 
 waterplus_map_tools_automoc: waterplus_map_tools/CMakeFiles/waterplus_map_tools_automoc
 waterplus_map_tools_automoc: waterplus_map_tools/CMakeFiles/waterplus_map_tools_automoc.dir/build.make

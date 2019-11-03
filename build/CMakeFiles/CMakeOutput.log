@@ -695,3 +695,45 @@ make[1]: Leaving directory '/home/hdy/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 Source file was:
 int main() { return 0; }
+Determining if the CXX compiler accepts the flag -Wl,--version-script,"/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/class_loader_hide_library_symbols__pcl_ros_io.script" passed with the following output:
+Change Dir: /home/hdy/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b891f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b891f.dir/build.make CMakeFiles/cmTC_b891f.dir/build
+make[1]: Entering directory '/home/hdy/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b891f.dir/DummyCXXFile.cxx.o
+/usr/bin/c++     -Wl,--version-script,"/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/class_loader_hide_library_symbols__pcl_ros_io.script"   -o CMakeFiles/cmTC_b891f.dir/DummyCXXFile.cxx.o -c /usr/share/cmake-3.5/Modules/DummyCXXFile.cxx
+Linking CXX executable cmTC_b891f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b891f.dir/link.txt --verbose=1
+/usr/bin/c++     -Wl,--version-script,"/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/class_loader_hide_library_symbols__pcl_ros_io.script"    CMakeFiles/cmTC_b891f.dir/DummyCXXFile.cxx.o  -o cmTC_b891f -rdynamic 
+make[1]: Leaving directory '/home/hdy/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the Q_WS_X11 exist passed with the following output:
+Change Dir: /home/hdy/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_291b8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_291b8.dir/build.make CMakeFiles/cmTC_291b8.dir/build
+make[1]: Entering directory '/home/hdy/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_291b8.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4   -o CMakeFiles/cmTC_291b8.dir/CheckSymbolExists.cxx.o -c /home/hdy/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_291b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_291b8.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_291b8.dir/CheckSymbolExists.cxx.o  -o cmTC_291b8 -rdynamic 
+make[1]: Leaving directory '/home/hdy/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+File /home/hdy/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_X11
+  return ((int*)(&Q_WS_X11))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

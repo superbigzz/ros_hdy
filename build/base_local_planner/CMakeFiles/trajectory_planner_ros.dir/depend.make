@@ -337,6 +337,8 @@ base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /home/hdy/catkin_ws/src/costmap_2d/include/costmap_2d/layer.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /home/hdy/catkin_ws/src/costmap_2d/include/costmap_2d/layered_costmap.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /home/hdy/catkin_ws/src/costmap_2d/include/costmap_2d/observation.h
+base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include/pcl_conversions/pcl_conversions.h
+base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/publisher.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/angles/angles.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/boost_161_condition_variable.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/boost_161_pthread_condition_variable.h
@@ -388,12 +390,10 @@ base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/nav_msgs/OccupancyGrid.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/nav_msgs/Odometry.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/nav_msgs/Path.h
-base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_msgs/ModelCoefficients.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_msgs/PointIndices.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_msgs/PolygonMesh.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_msgs/Vertices.h
-base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_ros/publisher.h
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/pluginlib/././class_loader_imp.hpp
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/pluginlib/./class_list_macros.hpp
 base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/kinetic/include/pluginlib/./class_loader.hpp

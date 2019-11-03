@@ -47,6 +47,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/python2.7"
   "/home/hdy/catkin_ws/src/base_local_planner/include"
   "/home/hdy/catkin_ws/src/costmap_2d/include"
+  "/home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include"
+  "/home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/pcl-1.7"

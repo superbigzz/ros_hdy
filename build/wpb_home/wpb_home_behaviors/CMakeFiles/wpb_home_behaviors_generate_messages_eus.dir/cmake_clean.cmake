@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/wpb_home_behaviors_generate_messages_eus"
+  "/home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg/Rect.l"
+  "/home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg/Coord.l"
   "/home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/manifest.l"
 )
 

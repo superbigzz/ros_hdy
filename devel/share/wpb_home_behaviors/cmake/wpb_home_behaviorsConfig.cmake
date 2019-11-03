@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(wpb_home_behaviors_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/hdy/catkin_ws/devel/include " STREQUAL " ")
   set(wpb_home_behaviors_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/hdy/catkin_ws/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://www.6-robot.com " STREQUAL " ")
@@ -162,7 +162,7 @@ foreach(t ${wpb_home_behaviors_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "message_runtime")
+set(depends "roscpp;std_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

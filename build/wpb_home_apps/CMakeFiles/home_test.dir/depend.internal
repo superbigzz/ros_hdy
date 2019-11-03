@@ -12,6 +12,9 @@ wpb_home_apps/CMakeFiles/home_test.dir/src/action_manager/action_manager.cpp.o
  /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitch.h
  /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitchRequest.h
  /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitchResponse.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include/pcl_conversions/pcl_conversions.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/point_cloud.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/transforms.h
  /home/hdy/catkin_ws/src/wpb_home_apps/include/action_manager.h
  /home/hdy/catkin_ws/src/wpb_home_apps/include/struct.h
  /home/hdy/catkin_ws/src/wpb_home_apps/src/action_manager/action_manager.cpp
@@ -201,13 +204,10 @@ wpb_home_apps/CMakeFiles/home_test.dir/src/action_manager/action_manager.cpp.o
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d.hpp
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/cuda.hpp
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/nonfree.hpp
- /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
  /opt/ros/kinetic/include/pcl_msgs/ModelCoefficients.h
  /opt/ros/kinetic/include/pcl_msgs/PointIndices.h
  /opt/ros/kinetic/include/pcl_msgs/PolygonMesh.h
  /opt/ros/kinetic/include/pcl_msgs/Vertices.h
- /opt/ros/kinetic/include/pcl_ros/point_cloud.h
- /opt/ros/kinetic/include/pcl_ros/transforms.h
  /opt/ros/kinetic/include/ros/advertise_options.h
  /opt/ros/kinetic/include/ros/advertise_service_options.h
  /opt/ros/kinetic/include/ros/assert.h
@@ -836,6 +836,9 @@ wpb_home_apps/CMakeFiles/home_test.dir/src/home_test.cpp.o
  /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitch.h
  /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitchRequest.h
  /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitchResponse.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include/pcl_conversions/pcl_conversions.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/point_cloud.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/transforms.h
  /home/hdy/catkin_ws/src/wpb_home_apps/include/10_home_script.h
  /home/hdy/catkin_ws/src/wpb_home_apps/include/action_manager.h
  /home/hdy/catkin_ws/src/wpb_home_apps/include/struct.h
@@ -1026,13 +1029,10 @@ wpb_home_apps/CMakeFiles/home_test.dir/src/home_test.cpp.o
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d.hpp
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/cuda.hpp
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/nonfree.hpp
- /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
  /opt/ros/kinetic/include/pcl_msgs/ModelCoefficients.h
  /opt/ros/kinetic/include/pcl_msgs/PointIndices.h
  /opt/ros/kinetic/include/pcl_msgs/PolygonMesh.h
  /opt/ros/kinetic/include/pcl_msgs/Vertices.h
- /opt/ros/kinetic/include/pcl_ros/point_cloud.h
- /opt/ros/kinetic/include/pcl_ros/transforms.h
  /opt/ros/kinetic/include/ros/advertise_options.h
  /opt/ros/kinetic/include/ros/advertise_service_options.h
  /opt/ros/kinetic/include/ros/assert.h
@@ -1660,6 +1660,9 @@ wpb_home_apps/CMakeFiles/home_test.dir/src/scripts/home_script.cpp.o
  /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitch.h
  /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitchRequest.h
  /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitchResponse.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include/pcl_conversions/pcl_conversions.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/point_cloud.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/transforms.h
  /home/hdy/catkin_ws/src/wpb_home_apps/include/10_home_script.h
  /home/hdy/catkin_ws/src/wpb_home_apps/include/action_manager.h
  /home/hdy/catkin_ws/src/wpb_home_apps/include/struct.h
@@ -1850,13 +1853,10 @@ wpb_home_apps/CMakeFiles/home_test.dir/src/scripts/home_script.cpp.o
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d.hpp
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/cuda.hpp
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/nonfree.hpp
- /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
  /opt/ros/kinetic/include/pcl_msgs/ModelCoefficients.h
  /opt/ros/kinetic/include/pcl_msgs/PointIndices.h
  /opt/ros/kinetic/include/pcl_msgs/PolygonMesh.h
  /opt/ros/kinetic/include/pcl_msgs/Vertices.h
- /opt/ros/kinetic/include/pcl_ros/point_cloud.h
- /opt/ros/kinetic/include/pcl_ros/transforms.h
  /opt/ros/kinetic/include/ros/advertise_options.h
  /opt/ros/kinetic/include/ros/advertise_service_options.h
  /opt/ros/kinetic/include/ros/assert.h

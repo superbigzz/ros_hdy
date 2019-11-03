@@ -33,6 +33,8 @@ dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /home/
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /home/hdy/catkin_ws/src/costmap_2d/include/costmap_2d/observation.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /home/hdy/catkin_ws/src/dwa_local_planner/include/dwa_local_planner/dwa_planner.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /home/hdy/catkin_ws/src/dwa_local_planner/src/dwa_planner.cpp
+dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include/pcl_conversions/pcl_conversions.h
+dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/publisher.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/angles/angles.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/boost_161_condition_variable.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/boost_161_pthread_condition_variable.h
@@ -84,12 +86,10 @@ dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/r
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/nav_msgs/OccupancyGrid.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/nav_msgs/Odometry.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/nav_msgs/Path.h
-dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/pcl_msgs/ModelCoefficients.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/pcl_msgs/PointIndices.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/pcl_msgs/PolygonMesh.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/pcl_msgs/Vertices.h
-dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/pcl_ros/publisher.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/pluginlib/././class_loader_imp.hpp
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/pluginlib/./class_loader.hpp
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/kinetic/include/pluginlib/class_desc.hpp
@@ -455,6 +455,8 @@ dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /home/hdy/catkin_ws/src/dwa_local_planner/include/dwa_local_planner/dwa_planner.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /home/hdy/catkin_ws/src/dwa_local_planner/include/dwa_local_planner/dwa_planner_ros.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /home/hdy/catkin_ws/src/dwa_local_planner/src/dwa_planner_ros.cpp
+dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include/pcl_conversions/pcl_conversions.h
+dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/publisher.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/angles/angles.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/boost_161_condition_variable.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/boost_161_pthread_condition_variable.h
@@ -506,12 +508,10 @@ dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /o
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/nav_msgs/OccupancyGrid.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/nav_msgs/Odometry.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/nav_msgs/Path.h
-dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_msgs/ModelCoefficients.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_msgs/PointIndices.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_msgs/PolygonMesh.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_msgs/Vertices.h
-dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/pcl_ros/publisher.h
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/pluginlib/././class_loader_imp.hpp
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/pluginlib/./class_list_macros.hpp
 dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/kinetic/include/pluginlib/./class_loader.hpp

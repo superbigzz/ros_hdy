@@ -338,6 +338,8 @@ base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_
  /home/hdy/catkin_ws/src/costmap_2d/include/costmap_2d/layer.h
  /home/hdy/catkin_ws/src/costmap_2d/include/costmap_2d/layered_costmap.h
  /home/hdy/catkin_ws/src/costmap_2d/include/costmap_2d/observation.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include/pcl_conversions/pcl_conversions.h
+ /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/publisher.h
  /opt/ros/kinetic/include/angles/angles.h
  /opt/ros/kinetic/include/boost_161_condition_variable.h
  /opt/ros/kinetic/include/boost_161_pthread_condition_variable.h
@@ -389,12 +391,10 @@ base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_
  /opt/ros/kinetic/include/nav_msgs/OccupancyGrid.h
  /opt/ros/kinetic/include/nav_msgs/Odometry.h
  /opt/ros/kinetic/include/nav_msgs/Path.h
- /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
  /opt/ros/kinetic/include/pcl_msgs/ModelCoefficients.h
  /opt/ros/kinetic/include/pcl_msgs/PointIndices.h
  /opt/ros/kinetic/include/pcl_msgs/PolygonMesh.h
  /opt/ros/kinetic/include/pcl_msgs/Vertices.h
- /opt/ros/kinetic/include/pcl_ros/publisher.h
  /opt/ros/kinetic/include/pluginlib/././class_loader_imp.hpp
  /opt/ros/kinetic/include/pluginlib/./class_list_macros.hpp
  /opt/ros/kinetic/include/pluginlib/./class_loader.hpp

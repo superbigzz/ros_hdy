@@ -55,7 +55,7 @@ include waterplus_map_tools/CMakeFiles/wp_nav_remote_automoc.dir/progress.make
 
 waterplus_map_tools/CMakeFiles/wp_nav_remote_automoc:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hdy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic moc for target wp_nav_remote"
-	cd /home/hdy/catkin_ws/build/waterplus_map_tools && /usr/bin/cmake -E cmake_autogen /home/hdy/catkin_ws/build/waterplus_map_tools/CMakeFiles/wp_nav_remote_automoc.dir/ ""
+	cd /home/hdy/catkin_ws/build/waterplus_map_tools && /usr/bin/cmake -E cmake_autogen /home/hdy/catkin_ws/build/waterplus_map_tools/CMakeFiles/wp_nav_remote_automoc.dir/ Debug
 
 wp_nav_remote_automoc: waterplus_map_tools/CMakeFiles/wp_nav_remote_automoc
 wp_nav_remote_automoc: waterplus_map_tools/CMakeFiles/wp_nav_remote_automoc.dir/build.make

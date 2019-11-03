@@ -25,6 +25,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/hdy/catkin_ws/devel/include"
   "/home/hdy/catkin_ws/src/base_local_planner/include"
   "/home/hdy/catkin_ws/src/costmap_2d/include"
+  "/home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include"
+  "/home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/pcl-1.7"
@@ -57,6 +59,8 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/hdy/catkin_ws/build/base_local_planner/CMakeFiles/base_local_planner.dir/DependInfo.cmake"
   "/home/hdy/catkin_ws/build/costmap_2d/CMakeFiles/layers.dir/DependInfo.cmake"
   "/home/hdy/catkin_ws/build/costmap_2d/CMakeFiles/costmap_2d.dir/DependInfo.cmake"
+  "/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/CMakeFiles/pcl_ros_filter.dir/DependInfo.cmake"
+  "/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -14,7 +14,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "DISABLE_PNG"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
-  "QT_NO_DEBUG"
   "QT_WIDGETS_LIB"
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
@@ -48,6 +47,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/libxml2"
   "/usr/include/python2.7"
   "/home/hdy/catkin_ws/src/costmap_2d/include"
+  "/home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include"
+  "/home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"
@@ -66,6 +67,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/hdy/catkin_ws/build/costmap_2d/CMakeFiles/costmap_2d.dir/DependInfo.cmake"
   "/home/hdy/catkin_ws/build/gtest/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/CMakeFiles/pcl_ros_filter.dir/DependInfo.cmake"
+  "/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

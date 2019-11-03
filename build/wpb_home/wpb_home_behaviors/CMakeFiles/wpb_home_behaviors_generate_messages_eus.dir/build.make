@@ -53,14 +53,28 @@ CMAKE_BINARY_DIR = /home/hdy/catkin_ws/build
 # Include the progress variables for this target.
 include wpb_home/wpb_home_behaviors/CMakeFiles/wpb_home_behaviors_generate_messages_eus.dir/progress.make
 
+wpb_home/wpb_home_behaviors/CMakeFiles/wpb_home_behaviors_generate_messages_eus: /home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg/Rect.l
+wpb_home/wpb_home_behaviors/CMakeFiles/wpb_home_behaviors_generate_messages_eus: /home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg/Coord.l
 wpb_home/wpb_home_behaviors/CMakeFiles/wpb_home_behaviors_generate_messages_eus: /home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/manifest.l
 
 
+/home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg/Rect.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg/Rect.l: /home/hdy/catkin_ws/src/wpb_home/wpb_home_behaviors/msg/Rect.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hdy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from wpb_home_behaviors/Rect.msg"
+	cd /home/hdy/catkin_ws/build/wpb_home/wpb_home_behaviors && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hdy/catkin_ws/src/wpb_home/wpb_home_behaviors/msg/Rect.msg -Iwpb_home_behaviors:/home/hdy/catkin_ws/src/wpb_home/wpb_home_behaviors/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p wpb_home_behaviors -o /home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg
+
+/home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg/Coord.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg/Coord.l: /home/hdy/catkin_ws/src/wpb_home/wpb_home_behaviors/msg/Coord.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hdy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from wpb_home_behaviors/Coord.msg"
+	cd /home/hdy/catkin_ws/build/wpb_home/wpb_home_behaviors && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hdy/catkin_ws/src/wpb_home/wpb_home_behaviors/msg/Coord.msg -Iwpb_home_behaviors:/home/hdy/catkin_ws/src/wpb_home/wpb_home_behaviors/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p wpb_home_behaviors -o /home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg
+
 /home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hdy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp manifest code for wpb_home_behaviors"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hdy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for wpb_home_behaviors"
 	cd /home/hdy/catkin_ws/build/wpb_home/wpb_home_behaviors && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors wpb_home_behaviors std_msgs
 
 wpb_home_behaviors_generate_messages_eus: wpb_home/wpb_home_behaviors/CMakeFiles/wpb_home_behaviors_generate_messages_eus
+wpb_home_behaviors_generate_messages_eus: /home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg/Rect.l
+wpb_home_behaviors_generate_messages_eus: /home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/msg/Coord.l
 wpb_home_behaviors_generate_messages_eus: /home/hdy/catkin_ws/devel/share/roseus/ros/wpb_home_behaviors/manifest.l
 wpb_home_behaviors_generate_messages_eus: wpb_home/wpb_home_behaviors/CMakeFiles/wpb_home_behaviors_generate_messages_eus.dir/build.make
 

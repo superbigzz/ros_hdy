@@ -48,6 +48,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
   "/usr/include/ni"
   "/usr/include/openni2"
+  "/home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include"
+  "/home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev"
@@ -56,6 +58,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/CMakeFiles/pcl_ros_filter.dir/DependInfo.cmake"
+  "/home/hdy/catkin_ws/build/perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

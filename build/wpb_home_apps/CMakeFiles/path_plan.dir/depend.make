@@ -11,6 +11,9 @@ wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: 
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitch.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitchRequest.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitchResponse.h
+wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include/pcl_conversions/pcl_conversions.h
+wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/point_cloud.h
+wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/transforms.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /home/hdy/catkin_ws/src/wpb_home_apps/include/action_manager.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /home/hdy/catkin_ws/src/wpb_home_apps/include/struct.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /home/hdy/catkin_ws/src/wpb_home_apps/src/action_manager/action_manager.cpp
@@ -200,13 +203,10 @@ wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: 
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d.hpp
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/cuda.hpp
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/nonfree.hpp
-wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/pcl_msgs/ModelCoefficients.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/pcl_msgs/PointIndices.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/pcl_msgs/PolygonMesh.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/pcl_msgs/Vertices.h
-wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/pcl_ros/point_cloud.h
-wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/pcl_ros/transforms.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/ros/advertise_options.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/ros/advertise_service_options.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/action_manager/action_manager.cpp.o: /opt/ros/kinetic/include/ros/assert.h
@@ -836,6 +836,9 @@ wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /home/hdy/catkin_ws/
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitch.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitchRequest.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /home/hdy/catkin_ws/devel/include/xfyun_waterplus/IATSwitchResponse.h
+wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_conversions/include/pcl_conversions/pcl_conversions.h
+wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/point_cloud.h
+wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /home/hdy/catkin_ws/src/perception_pcl/pcl_ros/include/pcl_ros/transforms.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /home/hdy/catkin_ws/src/wpb_home_apps/include/action_manager.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /home/hdy/catkin_ws/src/wpb_home_apps/include/struct.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /home/hdy/catkin_ws/src/wpb_home_apps/src/path_plan.cpp
@@ -1025,13 +1028,10 @@ wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/inc
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d.hpp
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/cuda.hpp
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/nonfree.hpp
-wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/pcl_msgs/ModelCoefficients.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/pcl_msgs/PointIndices.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/pcl_msgs/PolygonMesh.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/pcl_msgs/Vertices.h
-wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/pcl_ros/point_cloud.h
-wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/pcl_ros/transforms.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/ros/advertise_options.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/ros/advertise_service_options.h
 wpb_home_apps/CMakeFiles/path_plan.dir/src/path_plan.cpp.o: /opt/ros/kinetic/include/ros/assert.h

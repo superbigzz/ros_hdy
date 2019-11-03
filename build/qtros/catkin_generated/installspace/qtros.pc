@@ -1,0 +1,8 @@
+prefix=/home/hdy/catkin_ws/install
+
+Name: qtros
+Description: Description of qtros
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/hdy/catkin_ws/install/lib 
+Requires: 

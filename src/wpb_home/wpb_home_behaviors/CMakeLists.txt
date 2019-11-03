@@ -53,11 +53,11 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+add_message_files(
+  FILES
+  Coord.msg
+  Rect.msg
+ )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -111,7 +111,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES wpb_home_behaviors
- CATKIN_DEPENDS message_runtime
+ CATKIN_DEPENDS roscpp std_msgs message_runtime
 #  DEPENDS system_lib
 )
 
@@ -222,3 +222,115 @@ add_dependencies(wpb_home_pass_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catk
 target_link_libraries(wpb_home_pass_server
   ${catkin_LIBRARIES}
 )
+
+add_executable(wpb_home_objects_3d
+  src/wpb_home_objects_3d.cpp
+)
+add_dependencies(wpb_home_objects_3d ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(wpb_home_objects_3d
+  ${catkin_LIBRARIES}
+)
+
+add_executable(wpb_home_grab_action
+  src/wpb_home_grab_action.cpp
+)
+add_dependencies(wpb_home_grab_action ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(wpb_home_grab_action
+  ${catkin_LIBRARIES}
+)
+
+add_executable(wpb_home_face_detect_3d
+  src/wpb_home_face_detect_3d.cpp
+)
+add_dependencies(wpb_home_face_detect_3d ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(wpb_home_face_detect_3d
+  ${catkin_LIBRARIES}
+)
+
+add_executable(hdy_obj
+  src/hdy_obj.cpp
+)
+add_dependencies(hdy_obj ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_obj
+  ${catkin_LIBRARIES}
+)
+
+add_executable(hdy_pcl
+  src/hdy_pcl.cpp
+)
+add_dependencies(hdy_pcl ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_pcl
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(hdy_pcl ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
+
+
+add_executable(hdy_lccp
+  hdy_pcl/hdy_lccp.cpp
+)
+add_dependencies(hdy_lccp ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_lccp
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(hdy_lccp ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
+
+add_executable(hdy_feacture
+  hdy_pcl/hdy_feacture.cpp
+)
+add_dependencies(hdy_feacture ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_feacture
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(hdy_feacture ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
+
+add_executable(hdy_models
+  hdy_pcl/hdy_models.cpp
+)
+add_dependencies(hdy_models ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_models
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(hdy_models ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
+
+
+add_executable(hdy_getmodels
+  hdy_cvfh/hdy_getmodels.cpp
+)
+add_dependencies(hdy_getmodels ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_getmodels
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(hdy_getmodels ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
+
+add_executable(hdy_train
+  hdy_cvfh/hdy_train.cpp
+)
+add_dependencies(hdy_train ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_train
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(hdy_train ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
+
+SET(CMAKE_C_COMPILER mpicc)
+SET(CMAKE_CXX_COMPILER mpicxx)
+include_directories(MPI_INCLUDE_PATH)
+target_link_libraries(hdy_train ${MPI_LIBRARIES})
+
+add_executable(hdy_recognition2
+  hdy_cvfh/hdy_recognition2.cpp
+)
+add_dependencies(hdy_recognition2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_recognition2
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(hdy_recognition2 ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
+
+add_executable(hdy_recognition
+  hdy_cvfh/hdy_recognition.cpp
+)
+add_dependencies(hdy_recognition ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(hdy_recognition
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(hdy_recognition ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
